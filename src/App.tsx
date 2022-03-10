@@ -96,7 +96,7 @@ export default class App extends React.Component<{}, IState> {
   }
 
   async componentDidMount() {
-    var checklist = await (await fetch("/er_checklist.json")).json() as IChecklist;
+    var checklist = await (await fetch("./er_checklist.json")).json() as IChecklist;
     var checked = this.loadLocalStorage();
     this.setState({
       Checklist: checklist,
