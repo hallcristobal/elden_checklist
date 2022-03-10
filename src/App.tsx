@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Achievements from './Achievements';
 import Collectables from './Collectables';
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 export interface IAchivement {
   "ID": number;
@@ -143,57 +142,45 @@ export default class App extends React.Component<{}, IState> {
     const body = this.state.Loading === true
       ? (<div>Loading...</div>)
       : this.state.Checklist !== null ? (
-        <>
-          <Routes>
-            <Route path="/collectables"
-              element={<Collectables
-                Checked={this.state.Checked}
-                Checklist={this.state.Checklist}
-                HideChecked={this.state.HideChecked}
-                onCheck={(id, checked) => this.onCheck(id, checked)}
-              />}
+        <div className="tab-content" id="nav-tabContent">
+          <div className="tab-pane fade show active" id="nav-achievements" role="tabpanel" aria-labelledby="nav-achievements-tab">
+            <Achievements
+              Achievements={this.state.Checklist.Achivements}
+              Checked={this.state.Checked}
+              HideChecked={this.state.HideChecked}
+              onCheck={(id, chk) => this.onCheck(id, chk)}
             />
-            <Route path="*"
-              element={<Achievements
-                Achievements={this.state.Checklist.Achivements}
-                Checked={this.state.Checked}
-                HideChecked={this.state.HideChecked}
-                onCheck={(id, chk) => this.onCheck(id, chk)}
-              />}
+          </div>
+          <div className="tab-pane fade" id="nav-collections" role="tabpanel" aria-labelledby="nav-collections-tab">
+            <Collectables
+              Checked={this.state.Checked}
+              Checklist={this.state.Checklist}
+              HideChecked={this.state.HideChecked}
+              onCheck={(id, checked) => this.onCheck(id, checked)}
             />
-          </Routes>
-        </>
+          </div>
+        </div>
       ) : (<div>Failed to Load List</div>);
 
     return (
-      <>
-        <BrowserRouter>
-          <div className="App container">
-            <nav>
-              <div className="nav nav-tabs mt-3" id="nav-tab">
-                <Link
-                  className="nav-link"
-                  type="button"
-                  to="/">Achievements</Link>
-                <Link
-                  className="nav-link"
-                  type="button"
-                  to="/collectables">Collectables</Link>
-              </div>
-            </nav>
-            <div className="row mt-2 mb-4">
-              <div className="col-auto">
-                <button className='btn btn-danger btn-sm' type='button' onClick={() => this.clearChecks()}>Clear All</button>
-              </div>
-              <div className="col-auto form-check form-switch">
-                <input className="form-check-input" type="checkbox" id="hideCompleted" checked={this.state.HideChecked} onChange={(evt) => this.setHideChecked(evt)} />
-                <label className="form-check-label" htmlFor="hideCompleted">Hide Completed</label>
-              </div>
-            </div>
-            {body}
+      <div className="App container">
+        <nav>
+          <div className="nav nav-tabs mt-3" id="nav-tab" role="tablist">
+            <button className="nav-link active" id="nav-achievements-tab" data-bs-toggle="tab" data-bs-target="#nav-achievements" type="button" role="tab" aria-controls="nav-achievements" aria-selected="true">Achievements</button>
+            <button className="nav-link" id="nav-collections-tab" data-bs-toggle="tab" data-bs-target="#nav-collections" type="button" role="tab" aria-controls="nav-collections" aria-selected="false">Collections</button>
           </div>
-        </BrowserRouter>
-      </>
+        </nav>
+        <div className="row mt-2 mb-4">
+          <div className="col-auto">
+            <button className='btn btn-danger btn-sm' type='button' onClick={() => this.clearChecks()}>Clear All</button>
+          </div>
+          <div className="col-auto form-check form-switch">
+            <input className="form-check-input" type="checkbox" id="hideCompleted" checked={this.state.HideChecked} onChange={(evt) => this.setHideChecked(evt)} />
+            <label className="form-check-label" htmlFor="hideCompleted">Hide Completed</label>
+          </div>
+        </div>
+        {body}
+      </div>
     );
   }
 }

@@ -45,7 +45,3 @@ export default class Checklist extends React.Component<IProps, {}> {
         )
     }
 }
-
-const checkedStyle = {
-    textDecoration: "line-through"
-};
