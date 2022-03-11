@@ -10,7 +10,16 @@ interface IProps {
 }
 
 export default class Checklist extends React.Component<IProps, {}> {
+
+    onCollapse(evt: React.MouseEvent<HTMLAnchorElement>) {
+        var target = evt.target as HTMLElement;
+        if (target.innerText === "[Hide]")
+            target.innerText = "[Show]";
+        else if (target.innerText === "[Show]")
+            target.innerText = "[Hide]";
+    }
     render() {
+        const id = `_${this.props.Title.toLowerCase().replace(/\//gi, "-").replace(/\s+/gi, "-")}_list`;
         const objects = this.props.Objects.sort((a, b) => a.ID - b.ID).map((a, idx) => {
             const missable = a.Flag ? (
                 <span style={{ color: "orange" }}>[Warning: Missable]</span>
@@ -37,10 +46,17 @@ export default class Checklist extends React.Component<IProps, {}> {
 
         return (
             <div>
-                <h3>{this.props.Title}</h3>
-                <ul>
-                    {objects}
-                </ul>
+                <div className="header">
+                    <h3>{this.props.Title} </h3>
+                    <a data-bs-toggle="collapse" href={`#${id}`} role="button" aria-expanded="true" aria-controls={id} onClick={this.onCollapse}>
+                        [Hide]
+                    </a>
+                </div>
+                <div className="collapse show" id={id}>
+                    <ul>
+                        {objects}
+                    </ul>
+                </div>
             </div>
         )
     }

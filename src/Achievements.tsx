@@ -21,8 +21,18 @@ export default class Achievements extends React.Component<IProps, IState> {
         };
     }
 
+    onCollapse(evt: React.MouseEvent<HTMLAnchorElement>) {
+        var target = evt.target as HTMLElement;
+        if (target.innerText === "[Hide]")
+            target.innerText = "[Show]";
+        else if (target.innerText === "[Show]")
+            target.innerText = "[Hide]";
+    }
+
     render() {
         const groups = this.state.groups.map((group, _idx) => {
+            const id = `${group.toLowerCase()}_achievements`;
+
             const achivementList = this.props.Achievements.filter(a => a.Type === group).sort((a, b) => a.ID - b.ID).map((a, idx) => {
                 const missable = a.Missable ? (
                     <span style={{ color: "red" }}>[Missable]</span>
@@ -49,10 +59,17 @@ export default class Achievements extends React.Component<IProps, IState> {
 
             return (
                 <>
-                    <h3>{`${group} Achievements`}</h3>
-                    <ul>
-                        {achivementList}
-                    </ul>
+                    <div className="header">
+                        <h3>{`${group} Achievements`} </h3>
+                        <a data-bs-toggle="collapse" href={`#${id}`} role="button" aria-expanded="false" aria-controls={id} onClick={this.onCollapse}>
+                            [Hide]
+                        </a>
+                    </div>
+                    <div className="collapse show" id={id}>
+                        <ul>
+                            {achivementList}
+                        </ul>
+                    </div>
                 </>
             )
         })
