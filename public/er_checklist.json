@@ -1,486 +1,580 @@
 {
-"Achivements":[
- {
-  "ID": 1001,
-  "Achievement Name": "Age of the Stars",
-  "Requirement": "Achieved the “Age of the Stars” ending",
-  "Type": "Quest",
-  "Missable": true
- },
- {
-  "ID": 1002,
-  "Achievement Name": "Ancestor Spirit",
-  "Requirement": "Defeated Ancestor Spirit",
-  "Type": "Battle",
-  "Missable": true
- },
- {
-  "ID": 1003,
-  "Achievement Name": "Astel, Naturalborn of the Void",
-  "Requirement": "Defeated Astel, Naturalborn of the Void",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1004,
-  "Achievement Name": "Commander Niall",
-  "Requirement": "Defeated Commander Niall",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1005,
-  "Achievement Name": "Dragonkin Soldier of Nokstella",
-  "Requirement": "Defeated Dragonkin Soldier of Nokstella",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1006,
-  "Achievement Name": "Dragonlord Placidusax",
-  "Requirement": "Defeated Dragonlord Placidusax",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1007,
-  "Achievement Name": "Elden Lord",
-  "Requirement": "Achieved the “Elden Lord” ending",
-  "Type": "Quest",
-  "Missable": false
- },
- {
-  "ID": 1008,
-  "Achievement Name": "Elden Ring",
-  "Requirement": "Obtained all trophies",
-  "Type": "Collection",
-  "Missable": false
- },
- {
-  "ID": 1009,
-  "Achievement Name": "Elemer of the Briar",
-  "Requirement": "Defeated Elemer of the Briar",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1010,
-  "Achievement Name": "Erdtree Aflame",
-  "Requirement": "Used kindling to set the Erdtree aflame",
-  "Type": "Quest",
-  "Missable": false
- },
- {
-  "ID": 1011,
-  "Achievement Name": "Fire Giant",
-  "Requirement": "Defeated Fire Giant",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1012,
-  "Achievement Name": "Godfrey the First Lord",
-  "Requirement": "Defeated Odfrey the First Lord",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1013,
-  "Achievement Name": "Godskin Duo",
-  "Requirement": "Defeated Goskin Duo",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1014,
-  "Achievement Name": "God-Slaying Armament",
-  "Requirement": "Upgraded any armament to its highest stage",
-  "Type": "Collection",
-  "Missable": false
- },
- {
-  "ID": 1015,
-  "Achievement Name": "Goskin Noble",
-  "Requirement": "Defeated Goskin Noble",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1016,
-  "Achievement Name": "Great Rune",
-  "Requirement": "Restored the power of a Great Rune",
-  "Type": "Quest",
-  "Missable": false
- },
- {
-  "ID": 1017,
-  "Achievement Name": "Hoarah Loux the Warrior",
-  "Requirement": "Defeated Hoarah Loux the Warrior",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1018,
-  "Achievement Name": "Legendary Armaments",
-  "Requirement": "Acquired all legendary armaments",
-  "Type": "Collection",
-  "Missable": true
- },
- {
-  "ID": 1019,
-  "Achievement Name": "Legendary Ashen Remains",
-  "Requirement": "Acquired all legendary ashen remains",
-  "Type": "Collection",
-  "Missable": false
- },
- {
-  "ID": 1020,
-  "Achievement Name": "Legendary Sorceries and Incantations",
-  "Requirement": "Acquired all legendary sorceries and incantations",
-  "Type": "Collection",
-  "Missable": false
- },
- {
-  "ID": 1021,
-  "Achievement Name": "Legendary Talismans",
-  "Requirement": "Acquired all legendary talismans",
-  "Type": "Collection",
-  "Missable": false
- },
- {
-  "ID": 1022,
-  "Achievement Name": "Leonine Misbegotten",
-  "Requirement": "Defeated the Leonine Misbegotten",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1023,
-  "Achievement Name": "Lichdragon Fortissax",
-  "Requirement": "Defeated Lichdragon Fortissax",
-  "Type": "Battle",
-  "Missable": true
- },
- {
-  "ID": 1024,
-  "Achievement Name": "Lord of Frenzied Flame",
-  "Requirement": "Achieved the “Lord of the Frenzied Flame” ending",
-  "Type": "Quest",
-  "Missable": false
- },
- {
-  "ID": 1025,
-  "Achievement Name": "Loretta, Knight of the Haligtree",
-  "Requirement": "Defeated Loretta, Knight of the Haligtree",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1026,
-  "Achievement Name": "Magma Wyrm Makar",
-  "Requirement": "Defeated Magma Wyrm Makar",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1027,
-  "Achievement Name": "Maliketh the Black Blade",
-  "Requirement": "Defeated Shardbearer Maliketh the Black Blade",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1028,
-  "Achievement Name": "Margit, the Fell Omen trophy",
-  "Requirement": "Defeated Margit, the Fell Omen",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1029,
-  "Achievement Name": "Mimic Tear",
-  "Requirement": "Defeated Mimic Tear",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1030,
-  "Achievement Name": "Mohg, the Omen",
-  "Requirement": "Defeated Mohg, the Omen",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1031,
-  "Achievement Name": "Red Wolf of Radagon",
-  "Requirement": "Defeated the Red Wolf of Radagon",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1032,
-  "Achievement Name": "Regal Ancestor Spirit",
-  "Requirement": "Defeated Regal Ancestor Spirit",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1033,
-  "Achievement Name": "Rennala, Queen of the Full Moon",
-  "Requirement": "Defeated Rennala, Queen of the Full Moon",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1034,
-  "Achievement Name": "Roundtable Hold",
-  "Requirement": "Arrived at Roundtable Hold",
-  "Type": "Quest",
-  "Missable": false
- },
- {
-  "ID": 1035,
-  "Achievement Name": "Royal Knight Loretta",
-  "Requirement": "Defeated Royal Knight Loretta",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1036,
-  "Achievement Name": "Shardbearer Godrick",
-  "Requirement": "Defeated Shardbearer Godrick",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1037,
-  "Achievement Name": "Shardbearer Melania",
-  "Requirement": "Defeated Shardbearer Malenia",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1038,
-  "Achievement Name": "Shardbearer Mohg",
-  "Requirement": "Defeated Shardbearer Mohg",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1039,
-  "Achievement Name": "Shardbearer Morgott",
-  "Requirement": "Defeated Shardbearer Morgott",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1040,
-  "Achievement Name": "Shardbearer Radahn",
-  "Requirement": "Defeated Shardbearer Radahn",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1041,
-  "Achievement Name": "Shardbearer Rykard",
-  "Requirement": "Defeated Shardbearer Rykard",
-  "Type": "Battle",
-  "Missable": false
- },
- {
-  "ID": 1042,
-  "Achievement Name": "Valiant Gargoyl",
-  "Requirement": "Defeated Valiant Gargoyle",
-  "Type": "Battle",
-  "Missable": false
- }
-],
-"Legendary Armaments":[
- {
-  "ID": 2001,
-  "Name": "Grafted Blade Greatsword",
-  "Description": "Reward for defeating Lionine Misbegotten.",
-  "Flag": false
- },
- {
-  "ID": 2002,
-  "Name": "Marais Executioner’s Sword",
-  "Description": "Reward for clearing Shaded Castle boss fight against Elemer.",
-  "Flag": false
- },
- {
-  "ID": 2003,
-  "Name": "Eclipse Shotel",
-  "Description": "Found in Castle Sol. From the Chuch of the Eclipse Site of Grace, it is just around the corner in the church at the altar.",
-  "Flag": false
- },
- {
-  "ID": 2004,
-  "Name": "Sword of Night and Flame",
-  "Description": "From the Manor Lower Level Site of Grace in Caria Manor you want to run outside and run on the castle walls. Just before you reach the third tower jump to the lower building on your left and from there drop once again to a building with a ladder heading inside the building from the roof. There inside a chest you will find it.",
-  "Flag": false
- },
- {
-  "ID": 2005,
-  "Name": "Devourer’s Scepter",
-  "Description": "Dropped by the NPC “Bernahl” at Warmaster’s Shack when killed. He will leave later in the game. If you missed him here you can instead find him in Volcano Manor and help him with his quest until he disappears. He will later appear in Farum, down the ladder from Beside the Great Bridge Site of Grace as a phantom and you can kill him there for the Devourer’s Scepter.",
-  "Flag": false
- },
- {
-  "ID": 2006,
-  "Name": "Golden Order Greatsword",
-  "Description": "Reward for clearing Cave of the Forlorn, south of the Minor Erdree in the area leading to Haligtree.",
-  "Flag": false
- },
- {
-  "ID": 2007,
-  "Name": "Ruins Greatsword",
-  "Description": "After Radahn is defeated head back to the Redmane Castle. Talk to the announcer in the Church until he leaves. Refresh at Site of grace and defeat the boss duo in the plaza.",
-  "Flag": false
- },
- {
-  "ID": 2008,
-  "Name": "Bolt of Gransax",
-  "Description": "From the Erdtree Sanctuary site of grace, go out the west door where there is an elevator you can take to the lower level. Follow the path down, then jump over the railing on the left to where the giant golden spear is sticking out of the wall. Climb a short distance up the spear to find this weapon. THIS IS MISSABLE – The Royal Capital gets destroyed at the end of the game and then the weapon is gone for this playthrough, but if you have a friend with the weapon you can have it dropped to you in co-op.",
-  "Flag": true
- },
- {
-  "ID": 2009,
-  "Name": "Dark Moon Greatsword",
-  "Description": "Reward for securing the Age of the Stars Ending. After the final talk with Renna it will appear where she was. See Elden Ring How to Get All Endings.",
-  "Flag": false
- }
-],
-"Legendary Ashen Remains":[
- {
-  "ID": 3001,
-  "Name": "Lhutel the Headless",
-  "Description": "Found in Tomsword Catacombs west of the Minor Erdtree in Weeping Peninsula.",
-  "Flag": false
- },
- {
-  "ID": 3002,
-  "Name": "Black Knife Tiche",
-  "Description": "Reward for Ringleader’s Evergaol in the northwest corner of Moonlight Plateau.",
-  "Flag": false
- },
- {
-  "ID": 3003,
-  "Name": "Redmane Knight Ogha",
-  "Description": "Finish War-Dead Catacombs in the north of Radahn boss fight arena.",
-  "Flag": false
- },
- {
-  "ID": 3004,
-  "Name": "Mimic Tear",
-  "Description": "Chest in Night’s Sacred Ground behind Stonesword Key Gate. From Ancestral Woods Site of Grace in Siofra River jump to the black building. Follow the ledges and roofs until you get into a cathedral-looking building with an altar. Find the chest at the end of the hallway past the altar.",
-  "Flag": false
- },
- {
-  "ID": 3005,
-  "Name": "Ancient Dragon Knight Kristoff",
-  "Description": "Found in Sainted Hero’s Grave west of Leyndell, the Royal Capital.",
-  "Flag": false
- },
- {
-  "ID": 3006,
-  "Name": "Cleanrot Knight Finlay",
-  "Description": "From the Prayer Room Site of Grace in Elphael, go straight after you teleport there. Go down the first set of stairs and jump the balcony to the pavilion with candles around it. There enter the room and you will find it in a chest.",
-  "Flag": false
- }
-],
-"Legendary Sorcery-Incantations":[
- {
-  "ID": 4001,
-  "Name": "Flame of the Fell God",
-  "Description": "Reward for clearing Malefactor Evergaol in south Liurnia.",
-  "Flag": false
- },
- {
-  "ID": 4002,
-  "Name": "Founding Rain of Stars",
-  "Description": "Found in Heretical Rise in the east Mountaintop of the Giants. You will have to cross an invisible bridge starting from the other side of the canyon by following barely visible mist showing you the path.",
-  "Flag": false
- },
- {
-  "ID": 4003,
-  "Name": "Elden Stars",
-  "Description": "Found in Deeproot Depths in a cave full of gigantic Ants. You can reach the cave by following the roots. In the cave you will find it at the exit past all the big ants.",
-  "Flag": false
- },
- {
-  "ID": 4004,
-  "Name": "Ranni’s Dark Moon",
-  "Description": "Found in Chelona’s Rise on the Moonlight Altar Plateau – you will have to interact with the book and kill 3 white turtles to open the seal. You will reach this area while working towards the Age of the Stars Ending. The first turtle is to the right of the chapel hanging on the wall of the cliff. Number 2 and 3 are problematic because they sometimes refuse to spawn. If number 2 doesn’t spawn for you head to number 3 instead for whom you will have to simply use the wind stream with your mount. Don’t teleport, just ride there. Also the other way around – if number 3 isn’t there, check number 2 instead. The sealed Rise opens after killing 2 turtles (1+2 or 1+3), it seems a big glitchy.",
-  "Flag": false
- },
- {
-  "ID": 4005,
-  "Name": "Comet Azur",
-  "Description": "Mt. Gelmir, Primeval Sorcerer Azur Site of Grace – get if from the Sorcerer there.",
-  "Flag": false
- },
- {
-  "ID": 4006,
-  "Name": "Stars of Ruin",
-  "Description": "Sellen Questline – find corpse of her master in Mt. Gelmir, (Comet Azur location – see Sorcery #5 in this list) talk to her and she will give you a key to the seal in a hidden cave south – find the hidden cave southwest of Fort Faroth, find the spell there. In order to find the cave you will have to hit an illusory wall! Sellen herself can be found in Waypoint Cellar Ruins.",
-  "Flag": false
- },
- {
-  "ID": 4007,
-  "Name": "Greyoll’s Roar",
-  "Description": "Kill Greyoll and buy it with Dragon Hearts at the Cathedral of the Dragon Communion. Greyoll is the big dragon close to Fort Faroth. You have to kill the 5 smaller dragons surrounding him and afterward Greyoll will be one hit away from death. Aggro the dragons one by one starting behind Greyoll.",
-  "Flag": false
- }
-],
-"Legendary Talismans":[
- {
-  "ID": 5001,
-  "Name": "Radagon Icon",
-  "Description": "Can be found in Academy of Raya Lucaria. From the Debate Parlor Site of Grace, head straight to get outside. Then immediately turn right, go around the corner and jump to the balcony. Take the ladder up and on the big balcony you can find it in a chest.",
-  "Flag": false
- },
- {
-  "ID": 5002,
-  "Name": "Radagon’s Soreseal",
-  "Description": "Can be found in Fort Faroth. When entering the Fort you will see it behind the wooden wall. Use the ladder to get to the roof and drop into the last hole there. Navigate through the catwalk to get it.",
-  "Flag": false
- },
- {
-  "ID": 5003,
-  "Name": "Godfrey Icon",
-  "Description": "Reward for clearing the Golden Lineage Evergaol in the south of Altus Plateau \/ Southwest from the Capital.",
-  "Flag": false
- },
- {
-  "ID": 5004,
-  "Name": "Moon of Nokstella",
-  "Description": "In a chest under the giant throne at the highest section in the west of Nokstella.",
-  "Flag": false
- },
- {
-  "ID": 5005,
-  "Name": "Dragoncrest Greatshield Talisman",
-  "Description": "In Elphael starting from the Drainage Channel Site of Grace, run on the roots and jump through the hole in the roof into the chappel. There on the balcony you will find it in a chest.",
-  "Flag": false
- },
- {
-  "ID": 5006,
-  "Name": "Marika’s Soreseal",
-  "Description": "In Elphael starting from the Prayer Room Site of Grace go outside and keep dropping down until you reach the bottom area. There you can find a gate you have to open with a Stonesword Key. Inside you will find it at an altar.",
-  "Flag": false
- },
- {
-  "ID": 5007,
-  "Name": "Old Lord’s Talisman",
-  "Description": "In Farum from Beside the Great Bridge Site of Grace instead of following the Bridge towards the boss, head in the other direction and find it in a chest at the end.",
-  "Flag": false
- },
- {
-  "ID": 5008,
-  "Name": "Erdtree’s Favor +2",
-  "Description": "This Talisman can only be obtained after the Capital becomes a desert (endgame). From the Forbidden Lands east of the capital, head back towards the capital, take the elevator down and you will find it on a dead tree.",
-  "Flag": false
- }
-]
+  "Achivements": [
+    {
+      "ID": 1001,
+      "Achievement Name": "Age of the Stars",
+      "Requirement": "Achieved the “Age of the Stars” ending",
+      "Type": "Quest",
+      "Missable": true
+    },
+    {
+      "ID": 1002,
+      "Achievement Name": "Ancestor Spirit",
+      "Requirement": "Defeated Ancestor Spirit",
+      "Type": "Battle",
+      "Missable": true
+    },
+    {
+      "ID": 1003,
+      "Achievement Name": "Astel, Naturalborn of the Void",
+      "Requirement": "Defeated Astel, Naturalborn of the Void",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1004,
+      "Achievement Name": "Commander Niall",
+      "Requirement": "Defeated Commander Niall",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1005,
+      "Achievement Name": "Dragonkin Soldier of Nokstella",
+      "Requirement": "Defeated Dragonkin Soldier of Nokstella",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1006,
+      "Achievement Name": "Dragonlord Placidusax",
+      "Requirement": "Defeated Dragonlord Placidusax",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1007,
+      "Achievement Name": "Elden Lord",
+      "Requirement": "Achieved the “Elden Lord” ending",
+      "Type": "Quest",
+      "Missable": false
+    },
+    {
+      "ID": 1008,
+      "Achievement Name": "Elden Ring",
+      "Requirement": "Obtained all trophies",
+      "Type": "Collection",
+      "Missable": false
+    },
+    {
+      "ID": 1009,
+      "Achievement Name": "Elemer of the Briar",
+      "Requirement": "Defeated Elemer of the Briar",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1010,
+      "Achievement Name": "Erdtree Aflame",
+      "Requirement": "Used kindling to set the Erdtree aflame",
+      "Type": "Quest",
+      "Missable": false
+    },
+    {
+      "ID": 1011,
+      "Achievement Name": "Fire Giant",
+      "Requirement": "Defeated Fire Giant",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1012,
+      "Achievement Name": "Godfrey the First Lord",
+      "Requirement": "Defeated Odfrey the First Lord",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1013,
+      "Achievement Name": "Godskin Duo",
+      "Requirement": "Defeated Goskin Duo",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1014,
+      "Achievement Name": "God-Slaying Armament",
+      "Requirement": "Upgraded any armament to its highest stage",
+      "Type": "Collection",
+      "Missable": false
+    },
+    {
+      "ID": 1015,
+      "Achievement Name": "Goskin Noble",
+      "Requirement": "Defeated Goskin Noble",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1016,
+      "Achievement Name": "Great Rune",
+      "Requirement": "Restored the power of a Great Rune",
+      "Type": "Quest",
+      "Missable": false
+    },
+    {
+      "ID": 1017,
+      "Achievement Name": "Hoarah Loux the Warrior",
+      "Requirement": "Defeated Hoarah Loux the Warrior",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1018,
+      "Achievement Name": "Legendary Armaments",
+      "Requirement": "Acquired all legendary armaments",
+      "Type": "Collection",
+      "Missable": true
+    },
+    {
+      "ID": 1019,
+      "Achievement Name": "Legendary Ashen Remains",
+      "Requirement": "Acquired all legendary ashen remains",
+      "Type": "Collection",
+      "Missable": false
+    },
+    {
+      "ID": 1020,
+      "Achievement Name": "Legendary Sorceries and Incantations",
+      "Requirement": "Acquired all legendary sorceries and incantations",
+      "Type": "Collection",
+      "Missable": false
+    },
+    {
+      "ID": 1021,
+      "Achievement Name": "Legendary Talismans",
+      "Requirement": "Acquired all legendary talismans",
+      "Type": "Collection",
+      "Missable": false
+    },
+    {
+      "ID": 1022,
+      "Achievement Name": "Leonine Misbegotten",
+      "Requirement": "Defeated the Leonine Misbegotten",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1023,
+      "Achievement Name": "Lichdragon Fortissax",
+      "Requirement": "Defeated Lichdragon Fortissax",
+      "Type": "Battle",
+      "Missable": true
+    },
+    {
+      "ID": 1024,
+      "Achievement Name": "Lord of Frenzied Flame",
+      "Requirement": "Achieved the “Lord of the Frenzied Flame” ending",
+      "Type": "Quest",
+      "Missable": false
+    },
+    {
+      "ID": 1025,
+      "Achievement Name": "Loretta, Knight of the Haligtree",
+      "Requirement": "Defeated Loretta, Knight of the Haligtree",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1026,
+      "Achievement Name": "Magma Wyrm Makar",
+      "Requirement": "Defeated Magma Wyrm Makar",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1027,
+      "Achievement Name": "Maliketh the Black Blade",
+      "Requirement": "Defeated Shardbearer Maliketh the Black Blade",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1028,
+      "Achievement Name": "Margit, the Fell Omen trophy",
+      "Requirement": "Defeated Margit, the Fell Omen",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1029,
+      "Achievement Name": "Mimic Tear",
+      "Requirement": "Defeated Mimic Tear",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1030,
+      "Achievement Name": "Mohg, the Omen",
+      "Requirement": "Defeated Mohg, the Omen",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1031,
+      "Achievement Name": "Red Wolf of Radagon",
+      "Requirement": "Defeated the Red Wolf of Radagon",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1032,
+      "Achievement Name": "Regal Ancestor Spirit",
+      "Requirement": "Defeated Regal Ancestor Spirit",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1033,
+      "Achievement Name": "Rennala, Queen of the Full Moon",
+      "Requirement": "Defeated Rennala, Queen of the Full Moon",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1034,
+      "Achievement Name": "Roundtable Hold",
+      "Requirement": "Arrived at Roundtable Hold",
+      "Type": "Quest",
+      "Missable": false
+    },
+    {
+      "ID": 1035,
+      "Achievement Name": "Royal Knight Loretta",
+      "Requirement": "Defeated Royal Knight Loretta",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1036,
+      "Achievement Name": "Shardbearer Godrick",
+      "Requirement": "Defeated Shardbearer Godrick",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1037,
+      "Achievement Name": "Shardbearer Melania",
+      "Requirement": "Defeated Shardbearer Malenia",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1038,
+      "Achievement Name": "Shardbearer Mohg",
+      "Requirement": "Defeated Shardbearer Mohg",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1039,
+      "Achievement Name": "Shardbearer Morgott",
+      "Requirement": "Defeated Shardbearer Morgott",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1040,
+      "Achievement Name": "Shardbearer Radahn",
+      "Requirement": "Defeated Shardbearer Radahn",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1041,
+      "Achievement Name": "Shardbearer Rykard",
+      "Requirement": "Defeated Shardbearer Rykard",
+      "Type": "Battle",
+      "Missable": false
+    },
+    {
+      "ID": 1042,
+      "Achievement Name": "Valiant Gargoyl",
+      "Requirement": "Defeated Valiant Gargoyle",
+      "Type": "Battle",
+      "Missable": false
+    }
+  ],
+  "Legendary Armaments": [
+    {
+      "ID": 2001,
+      "Name": "Grafted Blade Greatsword",
+      "Description": "Reward for defeating Lionine Misbegotten.",
+      "Flag": false
+    },
+    {
+      "ID": 2002,
+      "Name": "Marais Executioner's Sword",
+      "Description": "Reward for clearing Shaded Castle boss fight against Elemer.",
+      "Flag": false
+    },
+    {
+      "ID": 2003,
+      "Name": "Eclipse Shotel",
+      "Description": "Found in Castle Sol. From the Chuch of the Eclipse Site of Grace, it is just around the corner in the church at the altar.",
+      "Flag": false
+    },
+    {
+      "ID": 2004,
+      "Name": "Sword of Night and Flame",
+      "Description": "From the Manor Lower Level Site of Grace in Caria Manor you want to run outside and run on the castle walls. Just before you reach the third tower jump to the lower building on your left and from there drop once again to a building with a ladder heading inside the building from the roof. There inside a chest you will find it.",
+      "Flag": false
+    },
+    {
+      "ID": 2005,
+      "Name": "Devourer's Scepter",
+      "Description": "Dropped by the NPC “Bernahl” at Warmaster's Shack when killed. He will leave later in the game. If you missed him here you can instead find him in Volcano Manor and help him with his quest until he disappears. He will later appear in Farum, down the ladder from Beside the Great Bridge Site of Grace as a phantom and you can kill him there for the Devourer's Scepter.",
+      "Flag": false
+    },
+    {
+      "ID": 2006,
+      "Name": "Golden Order Greatsword",
+      "Description": "Reward for clearing Cave of the Forlorn, south of the Minor Erdree in the area leading to Haligtree.",
+      "Flag": false
+    },
+    {
+      "ID": 2007,
+      "Name": "Ruins Greatsword",
+      "Description": "After Radahn is defeated head back to the Redmane Castle. Talk to the announcer in the Church until he leaves. Refresh at Site of grace and defeat the boss duo in the plaza.",
+      "Flag": false
+    },
+    {
+      "ID": 2008,
+      "Name": "Bolt of Gransax",
+      "Description": "From the Erdtree Sanctuary site of grace, go out the west door where there is an elevator you can take to the lower level. Follow the path down, then jump over the railing on the left to where the giant golden spear is sticking out of the wall. Climb a short distance up the spear to find this weapon. THIS IS MISSABLE – The Royal Capital gets destroyed at the end of the game and then the weapon is gone for this playthrough, but if you have a friend with the weapon you can have it dropped to you in co-op.",
+      "Flag": true
+    },
+    {
+      "ID": 2009,
+      "Name": "Dark Moon Greatsword",
+      "Description": "Reward for securing the Age of the Stars Ending. After the final talk with Renna it will appear where she was. See Elden Ring How to Get All Endings.",
+      "Flag": false
+    }
+  ],
+  "Legendary Ashen Remains": [
+    {
+      "ID": 3001,
+      "Name": "Lhutel the Headless",
+      "Description": "Found in Tomsword Catacombs west of the Minor Erdtree in Weeping Peninsula.",
+      "Flag": false
+    },
+    {
+      "ID": 3002,
+      "Name": "Black Knife Tiche",
+      "Description": "Reward for Ringleader's Evergaol in the northwest corner of Moonlight Plateau.",
+      "Flag": false
+    },
+    {
+      "ID": 3003,
+      "Name": "Redmane Knight Ogha",
+      "Description": "Finish War-Dead Catacombs in the north of Radahn boss fight arena.",
+      "Flag": false
+    },
+    {
+      "ID": 3004,
+      "Name": "Mimic Tear",
+      "Description": "Chest in Night's Sacred Ground behind Stonesword Key Gate. From Ancestral Woods Site of Grace in Siofra River jump to the black building. Follow the ledges and roofs until you get into a cathedral-looking building with an altar. Find the chest at the end of the hallway past the altar.",
+      "Flag": false
+    },
+    {
+      "ID": 3005,
+      "Name": "Ancient Dragon Knight Kristoff",
+      "Description": "Found in Sainted Hero's Grave west of Leyndell, the Royal Capital.",
+      "Flag": false
+    },
+    {
+      "ID": 3006,
+      "Name": "Cleanrot Knight Finlay",
+      "Description": "From the Prayer Room Site of Grace in Elphael, go straight after you teleport there. Go down the first set of stairs and jump the balcony to the pavilion with candles around it. There enter the room and you will find it in a chest.",
+      "Flag": false
+    }
+  ],
+  "Legendary Sorcery-Incantations": [
+    {
+      "ID": 4001,
+      "Name": "Flame of the Fell God",
+      "Description": "Reward for clearing Malefactor Evergaol in south Liurnia.",
+      "Flag": false
+    },
+    {
+      "ID": 4002,
+      "Name": "Founding Rain of Stars",
+      "Description": "Found in Heretical Rise in the east Mountaintop of the Giants. You will have to cross an invisible bridge starting from the other side of the canyon by following barely visible mist showing you the path.",
+      "Flag": false
+    },
+    {
+      "ID": 4003,
+      "Name": "Elden Stars",
+      "Description": "Found in Deeproot Depths in a cave full of gigantic Ants. You can reach the cave by following the roots. In the cave you will find it at the exit past all the big ants.",
+      "Flag": false
+    },
+    {
+      "ID": 4004,
+      "Name": "Ranni's Dark Moon",
+      "Description": "Found in Chelona's Rise on the Moonlight Altar Plateau – you will have to interact with the book and kill 3 white turtles to open the seal. You will reach this area while working towards the Age of the Stars Ending. The first turtle is to the right of the chapel hanging on the wall of the cliff. Number 2 and 3 are problematic because they sometimes refuse to spawn. If number 2 doesn't spawn for you head to number 3 instead for whom you will have to simply use the wind stream with your mount. Don't teleport, just ride there. Also the other way around – if number 3 isn't there, check number 2 instead. The sealed Rise opens after killing 2 turtles (1+2 or 1+3), it seems a big glitchy.",
+      "Flag": false
+    },
+    {
+      "ID": 4005,
+      "Name": "Comet Azur",
+      "Description": "Mt. Gelmir, Primeval Sorcerer Azur Site of Grace – get if from the Sorcerer there.",
+      "Flag": false
+    },
+    {
+      "ID": 4006,
+      "Name": "Stars of Ruin",
+      "Description": "Sellen Questline – find corpse of her master in Mt. Gelmir, (Comet Azur location – see Sorcery #5 in this list) talk to her and she will give you a key to the seal in a hidden cave south – find the hidden cave southwest of Fort Faroth, find the spell there. In order to find the cave you will have to hit an illusory wall! Sellen herself can be found in Waypoint Cellar Ruins.",
+      "Flag": false
+    },
+    {
+      "ID": 4007,
+      "Name": "Greyoll's Roar",
+      "Description": "Kill Greyoll and buy it with Dragon Hearts at the Cathedral of the Dragon Communion. Greyoll is the big dragon close to Fort Faroth. You have to kill the 5 smaller dragons surrounding him and afterward Greyoll will be one hit away from death. Aggro the dragons one by one starting behind Greyoll.",
+      "Flag": false
+    }
+  ],
+  "Legendary Talismans": [
+    {
+      "ID": 5001,
+      "Name": "Radagon Icon",
+      "Description": "Can be found in Academy of Raya Lucaria. From the Debate Parlor Site of Grace, head straight to get outside. Then immediately turn right, go around the corner and jump to the balcony. Take the ladder up and on the big balcony you can find it in a chest.",
+      "Flag": false
+    },
+    {
+      "ID": 5002,
+      "Name": "Radagon's Soreseal",
+      "Description": "Can be found in Fort Faroth. When entering the Fort you will see it behind the wooden wall. Use the ladder to get to the roof and drop into the last hole there. Navigate through the catwalk to get it.",
+      "Flag": false
+    },
+    {
+      "ID": 5003,
+      "Name": "Godfrey Icon",
+      "Description": "Reward for clearing the Golden Lineage Evergaol in the south of Altus Plateau / Southwest from the Capital.",
+      "Flag": false
+    },
+    {
+      "ID": 5004,
+      "Name": "Moon of Nokstella",
+      "Description": "In a chest under the giant throne at the highest section in the west of Nokstella.",
+      "Flag": false
+    },
+    {
+      "ID": 5005,
+      "Name": "Dragoncrest Greatshield Talisman",
+      "Description": "In Elphael starting from the Drainage Channel Site of Grace, run on the roots and jump through the hole in the roof into the chappel. There on the balcony you will find it in a chest.",
+      "Flag": false
+    },
+    {
+      "ID": 5006,
+      "Name": "Marika's Soreseal",
+      "Description": "In Elphael starting from the Prayer Room Site of Grace go outside and keep dropping down until you reach the bottom area. There you can find a gate you have to open with a Stonesword Key. Inside you will find it at an altar.",
+      "Flag": false
+    },
+    {
+      "ID": 5007,
+      "Name": "Old Lord's Talisman",
+      "Description": "In Farum from Beside the Great Bridge Site of Grace instead of following the Bridge towards the boss, head in the other direction and find it in a chest at the end.",
+      "Flag": false
+    },
+    {
+      "ID": 5008,
+      "Name": "Erdtree's Favor +2",
+      "Description": "This Talisman can only be obtained after the Capital becomes a desert (endgame). From the Forbidden Lands east of the capital, head back towards the capital, take the elevator down and you will find it on a dead tree.",
+      "Flag": false
+    }
+  ],
+  "Millicent": [
+    {
+      "ID": 6001,
+      "Name": "Step 1",
+      "Description": "Speak with Gowry in his <a class=\"wiki_link\" title=\"Elden Ring Gowry's Shack\" href=\"https://eldenring.wiki.fextralife.com/Gowry's+Shack\">shack</a> and he will ask for a favor. He wants help to heal a young girl, <a class=\"wiki_link\" title=\"Elden Ring Millicent\" href=\"https://eldenring.wiki.fextralife.com/Millicent\">Millicent</a>, found beyond Sellia, who has the Scarlot Rot. To do this he will ask you to seek an <a class=\"wiki_link\" title=\"Elden Ring Unalloyed Gold Needle\" href=\"https://eldenring.wiki.fextralife.com/Unalloyed+Gold+Needle\">Unalloyed Gold Needle</a> dropped by <a class=\"wiki_link\" title=\"Elden Ring Commander O'Neil\" href=\"https://eldenring.wiki.fextralife.com/Commander+O'Neil\">Commander O'Neil</a> located in the deep scarlet <a class=\"wiki_link\" title=\"Elden Ring Aeonia Swamp\" href=\"https://eldenring.wiki.fextralife.com/Aeonia+Swamp\">Swamp of Aeonia</a>, outside Sellia's bounds. In return, he will share the secrets of the town of Sellia.&nbsp;"
+    },
+    {
+      "ID": 6002,
+      "Name": "Step 2",
+      "Description": "You will need to fetch the Unalloyed Gold Needle and return it to him. After returning to him, he'll tell you he'll need some time to repair the needle and will give you&nbsp;<a class=\"wiki_link\" title=\"Elden Ring Sellia's Secret\" href=\"https://eldenring.wiki.fextralife.com/Sellia's+Secret\">Sellia's Secret</a>."
+    },
+    {
+      "ID": 6003,
+      "Name": "Step 3",
+      "Description": "Warp to a nearby point or quit game then reload and return and he'll give you the repaired needle."
+    },
+    {
+      "ID": 6004,
+      "Name": "Step 4",
+      "Description": "Bring the needle to <a class=\"wiki_link\" title=\"Elden Ring Millicent \" href=\"https://eldenring.wiki.fextralife.com/Millicent+\">Millicent</a> at the <a class=\"wiki_link\" title=\"Elden Ring Church of the Plague\" href=\"https://eldenring.wiki.fextralife.com/Church+of+the+Plague\">Church of the Plague</a>.<br><ul><li>Light the beacons in Sellia, according to the secret Gowry gave you, in order to open the way to the church.</li></ul>"
+    },
+    {
+      "ID": 6005,
+      "Name": "Step 5",
+      "Description": "After Millicent uses the needle, reload the game and exhaust her dialogue. She will gift you the <a class=\"wiki_link\" title=\"Elden Ring Prosthesis-Wearer Heirloom\" href=\"https://eldenring.wiki.fextralife.com/Prosthesis-Wearer+Heirloom\">Prosthesis-Wearer Heirloom</a>."
+    },
+    {
+      "ID": 6006,
+      "Name": "Step 6",
+      "Description": "Speak with Gowry at his shack and he will offer to sell you sorceries."
+    },
+    {
+      "ID": 6007,
+      "Name": "Step 7",
+      "Description": "Reload the area and return to his shack to speak with Millicent, where she will announce she is going on a journey."
+    },
+    {
+      "ID": 6008,
+      "Name": "Step 8",
+      "Description": "Millicent now will be located just north of the Erdtree-Gazing Hill Grace in Altus Plateau. The player can give her the&nbsp;<a class=\"wiki_link\" title=\"Elden Ring Valkyrie's Prosthesis\" href=\"https://eldenring.wiki.fextralife.com/Valkyrie's+Prosthesis\" target=\"_blank\" rel=\"noopener noreferrer\">Valkyrie's Prosthesis</a> item to advance her quest line after exhausting her dialogue."
+    },
+    {
+      "ID": 6009,
+      "Name": "Step 9",
+      "Description": "After defeating the boss of Dominula, Windmill Village she will be near the Windmill Heights Grace after reload. Exhaust her dialogue to continue the quest."
+    },
+    {
+      "ID": 6010,
+      "Name": "Step 10",
+      "Description": "Millicent will move to the Ancient Snow Valley Ruins Grace at Mountaintop of the Giants."
+    },
+    {
+      "ID": 6011,
+      "Name": "Step 11",
+      "Description": "Millicent will next be available at the Prayer Room Grace at Elphael, Brace of the Haligtree. She will not move from this spot until the player has defeated a Ulcerated Tree Spirit mini-boss just before the Drainage Channel Grace."
+    },
+    {
+      "ID": 6012,
+      "Name": "Step 12",
+      "Description": "Once the player has defeated the mini-boss and rested/traveled at a Grace, there will a summon sign on the mini boss arena that allows the player to be summoned to her world and help fight 4 difficult NPC invaders known as Millicent’s Sisters granting you the <a class=\"wiki_link\" title=\"Elden Ring Rotten Winged Sword Insignia\" href=\"https://eldenring.wiki.fextralife.com/Rotten+Winged+Sword+Insignia\">Rotten Winged Sword Insignia</a> upon completion."
+    },
+    {
+      "ID": 6013,
+      "Name": "Step 13",
+      "Description": "Once completed the player can reset the area again and she will be nearby where her summoning sign was. Interact and exhaust her dialogue for the last time as upon one more rest she will be dead in the same spot and her corpse can be looted for the <a class=\"wiki_link\" title=\"Elden Ring Unalloyed Gold Needle\" href=\"https://eldenring.wiki.fextralife.com/Unalloyed+Gold+Needle\">Unalloyed Gold Needle</a>, which can be used at Malena’s flower to receive <a class=\"wiki_link\" title=\"Elden Ring Miquella's Needle\" href=\"https://eldenring.wiki.fextralife.com/Miquella's+Needle\">Miquella’s Needle</a>. Be careful however, if you land on her, she will die and will not drop the Needle, and will instead drop <a class=\"wiki_link\" title=\"Elden Ring Millicent%27s Prosthesis\" href=\"https://eldenring.wiki.fextralife.com/Millicent%27s+Prosthesis\">Millicent's Prosthesis</a>."
+    }
+  ],
+  "Dung Eater": [
+    {
+      "ID": 7001,
+      "Name": "Step 1",
+      "Description": "After showing the Dung Eater at least one <a class=\"wiki_link\" title=\"Elden Ring Seedbed Curse\" href=\"https://eldenring.wiki.fextralife.com/Seedbed+Curse\">Seedbed Curse</a>, he will give you the <a class=\"wiki_link\" title=\"Elden Ring Sewer-Gaol Key\" href=\"https://eldenring.wiki.fextralife.com/Sewer-Gaol+Key\">Sewer-Gaol Key</a>. This can be used to access the sewers undernath Leyndell via a well, leading to the <a class=\"wiki_link\" title=\"Elden Ring Subterranean Shunning-Grounds\" href=\"https://eldenring.wiki.fextralife.com/Subterranean+Shunning-Grounds\">Subterranean Shunning-Grounds</a>."
+    },
+    {
+      "ID": 7002,
+      "Name": "Step 2",
+      "Description": "The Dung Eater can be found in the newly-unlocked sewers and released from his prison by talking to him.<ul><li>Spawn at the&nbsp;Underground Roadside grace<ul><li>Leave this room and take a left</li><li>Now head down the corridor and jump down the open grate</li><li>Run North and go past the giant poison plants and climb the ladder</li><li>Be wary of the giant hand in this room, behind it is the Gaol door with Dung Eater inside</li><li>Do not kill Dung Eater here if you want to complete his questline<ul><li>Dung Eater in his cell</li><li><a class=\"wiki_link\" href=\"https://eldenring.wiki.fextralife.com/file/Elden-Ring/dung_eater_in_sewers.jpg\" target=\"_blank\" rel=\"noopener noreferrer\"><img title=\"Dung Eater in Sewers\" src=\"https://eldenring.wiki.fextralife.com/file/Elden-Ring/dung_eater_in_sewers.jpg\" alt=\"dung eater in sewers\" width=\"386\" height=\"217\"></a></li></ul></li></ul></li></ul>"
+    },
+    {
+      "ID": 7003,
+      "Name": "Step 3",
+      "Description": "Upon returning to Roundtable Hold, the Dung Eater will be missing, having left a message asking you to fight him at the outer moat. <a class=\"wiki_link\" title=\"Elden Ring Interactive map?id=4605&amp;lat=-93.653126&amp;lng=115.069298&amp;zoom=8&amp;code=mapA\" href=\"https://eldenring.wiki.fextralife.com/Interactive+map?id=4605&amp;lat=-93.653126&amp;lng=115.069298&amp;zoom=8&amp;code=mapA\">Map Link</a>.<ul><li>Make sure you complete <a class=\"wiki_link\" title=\"Elden Ring Blackguard Big Boggart\" href=\"https://eldenring.wiki.fextralife.com/Blackguard+Big+Boggart\">Blackguard Big Boggart's</a>&nbsp;questline before moving onto the next step otherwise, Big won't get murdered by Dung Eater and drop a Seedbed Curse.&nbsp;</li><li>Dung Eater in the Outer Moat<ul><li><a class=\"wiki_link\" href=\"https://eldenring.wiki.fextralife.com/file/Elden-Ring/dung_eater.jpg\" target=\"_blank\" rel=\"noopener noreferrer\"><img title=\"Dung Eater invader\" src=\"https://eldenring.wiki.fextralife.com/file/Elden-Ring/dung_eater.jpg\" alt=\"dung eater\" width=\"488\" height=\"275\"></a></li></ul></li></ul>"
+    },
+    {
+      "ID": 7004,
+      "Name": "Step 4",
+      "Description": "Upon defeating the Dung Eater at the moat he will return to Roundtable Hold. Talk to him and he will ask you to bring his real body more <a class=\"wiki_link\" title=\"Elden Ring Seedbed Curse\" href=\"https://eldenring.wiki.fextralife.com/Seedbed+Curse\">Seedbed Curses</a>. His body can be found tied up in a chair in the same room that he was rescued from. You may interact with him to&nbsp;give <a class=\"wiki_link\" title=\"Elden Ring Seedbed Curse\" href=\"https://eldenring.wiki.fextralife.com/Seedbed+Curse\">Seedbed Curses</a>&nbsp;to him.&nbsp;"
+    },
+    {
+      "ID": 7005,
+      "Name": "Step 5",
+      "Description": "After giving the Dung Eater 5 <a class=\"wiki_link\" title=\"Elden Ring Seedbed Curse\" href=\"https://eldenring.wiki.fextralife.com/Seedbed+Curse\">Seedbed Curses</a>, his questline will be complete and you will be rewarded the <a class=\"wiki_link\" title=\"Elden Ring Mending Rune of the Fell Curse\" href=\"https://eldenring.wiki.fextralife.com/Mending+Rune+of+the+Fell+Curse\">Mending Rune of the Fell Curse</a>.<ul><li>Reload the area and travel back to find the <a class=\"wiki_link\" title=\"Elden Ring Omen Set\" href=\"https://eldenring.wiki.fextralife.com/Omen+Set\">Omen Set</a> where he gave you the rune.</li></ul>"
+    }
+  ]
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Achievements from './Achievements';
 import Collectables from './Collectables';
+import QuestLines from './QuestLines';
 
 export interface IAchivement {
   "ID": number;
@@ -24,6 +25,8 @@ export interface IChecklist {
   "Legendary Ashen Remains": IObject[];
   "Legendary Sorcery-Incantations": IObject[];
   "Legendary Talismans": IObject[];
+  "Millicent": IObject[];
+  "Dung Eater": IObject[];
 }
 
 interface ILocalStorage {
@@ -159,6 +162,14 @@ export default class App extends React.Component<{}, IState> {
               onCheck={(id, checked) => this.onCheck(id, checked)}
             />
           </div>
+          <div className="tab-pane fade" id="nav-quest-lines" role="tabpanel" aria-labelledby="nav-quest-lines-tab">
+            <QuestLines
+              Checked={this.state.Checked}
+              Checklist={this.state.Checklist}
+              HideChecked={this.state.HideChecked}
+              onCheck={(id, checked) => this.onCheck(id, checked)}
+            />
+          </div>
         </div>
       ) : (<div>Failed to Load List</div>);
 
@@ -168,6 +179,7 @@ export default class App extends React.Component<{}, IState> {
           <div className="nav nav-tabs mt-3" id="nav-tab" role="tablist">
             <button className="nav-link active" id="nav-achievements-tab" data-bs-toggle="tab" data-bs-target="#nav-achievements" type="button" role="tab" aria-controls="nav-achievements" aria-selected="true">Achievements</button>
             <button className="nav-link" id="nav-collections-tab" data-bs-toggle="tab" data-bs-target="#nav-collections" type="button" role="tab" aria-controls="nav-collections" aria-selected="false">Collections</button>
+            <button className="nav-link" id="nav-quest-lines-tab" data-bs-toggle="tab" data-bs-target="#nav-quest-lines" type="button" role="tab" aria-controls="nav-quest-lines" aria-selected="false">Quest Lines</button>
           </div>
         </nav>
         <div className="row mt-2 mb-4">

@@ -48,12 +48,12 @@ export default class Achievements extends React.Component<IProps, IState> {
             });
 
             return (
-                <span key={`list_group_${_idx}`}>
+                <>
                     <h3>{`${group} Achievements`}</h3>
                     <ul>
                         {achivementList}
                     </ul>
-                </span>
+                </>
             )
         })
         return (

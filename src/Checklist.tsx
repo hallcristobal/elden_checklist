@@ -27,7 +27,7 @@ export default class Checklist extends React.Component<IProps, {}> {
                                 checked={checked}
                                 onChange={(evt) => this.props.onCheck(a.ID, evt.target.checked)} />
                             <span className="form-check-label">
-                                {missable} <strong>{a.Name}</strong>: {a.Description}
+                                {missable} <strong>{a.Name}</strong>: <span dangerouslySetInnerHTML={{ __html: a.Description }}></span>
                             </span>
                         </div>
                     </label>
