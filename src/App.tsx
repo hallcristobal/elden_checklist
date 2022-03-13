@@ -40,6 +40,7 @@ interface IState {
   Loading: boolean;
   Checked: number[];
   HideChecked: boolean;
+  Collapsed: boolean;
 }
 
 const STORAGE_KEY = "elden.ring.checklist.marked";
@@ -52,6 +53,7 @@ export default class App extends React.Component<{}, IState> {
       Loading: true,
       Checked: [],
       HideChecked: false,
+      Collapsed: false,
     };
   }
 
@@ -121,6 +123,22 @@ export default class App extends React.Component<{}, IState> {
     }, () => this.saveLocalStorage());
   }
 
+  collapseShowAll() {
+    var list: HTMLElement[] = Array.from(document.querySelectorAll("a[data-bs-toggle=collapse]"));
+
+    if (this.state.Collapsed) {
+      list = list.filter(e => e.classList.contains("collapsed"));
+    } else {
+      list = list.filter(e => !e.classList.contains("collapsed"));
+    }
+
+    list.forEach(e => e.click());
+
+    this.setState({
+      Collapsed: !this.state.Collapsed
+    });
+  }
+
   render() {
     const body = this.state.Loading === true
       ? (<div>Loading...</div>)
@@ -163,6 +181,9 @@ export default class App extends React.Component<{}, IState> {
           </div>
         </nav>
         <div className="row mt-2 mb-4">
+          <div className="col-auto">
+            <button className='btn btn-warning btn-sm' type='button' onClick={() => this.collapseShowAll()}>{this.state.Collapsed ? "Expand" : "Collapse"} All</button>
+          </div>
           <div className="col-auto">
             <button className='btn btn-danger btn-sm' type='button' onClick={() => this.clearChecks()}>Clear All</button>
           </div>

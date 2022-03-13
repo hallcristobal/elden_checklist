@@ -19,12 +19,17 @@ export default class Checklist extends React.Component<IProps, {}> {
             target.innerText = "[Hide]";
     }
     render() {
-        const id = `_${this.props.Title.toLowerCase().replace(/\//gi, "-").replace(/\s+/gi, "-")}_list`;
+        const id = `_${this.props.Title.toLowerCase().replace(/[^a-zA-Z]/gi, "-").replace(/\s+/gi, "-")}_list`;
+        var numChecked = 0;
         const objects = this.props.Objects.sort((a, b) => a.ID - b.ID).map((a, idx) => {
             const missable = a.Flag ? (
                 <span style={{ color: "orange" }}>[Warning: Missable]</span>
             ) : (<></>);
+
             const checked = this.props.Checked.indexOf(a.ID) !== -1;
+            if (checked)
+                numChecked++;
+
             return (
                 <li key={`object_${idx}`} style={checked && this.props.HideChecked ? { "display": "none" } : {}}>
                     <label className={checked ? "checked" : ""}>
@@ -47,7 +52,7 @@ export default class Checklist extends React.Component<IProps, {}> {
         return (
             <div>
                 <div className="header">
-                    <h3>{this.props.Title} </h3>
+                    <h3>{this.props.Title} <span className={"checked-count " + (numChecked === this.props.Objects.length ? "complete" : "")}>({numChecked}/{this.props.Objects.length})</span></h3>
                     <a data-bs-toggle="collapse" href={`#${id}`} role="button" aria-expanded="true" aria-controls={id} onClick={this.onCollapse}>
                         [Hide]
                     </a>

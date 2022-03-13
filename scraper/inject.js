@@ -9,9 +9,13 @@ if (!existing["QuestLines"]) {
 }
 
 for (var key of Object.keys(toInject)) {
-    if (existing["QuestLines"][key])
+    if (existing["QuestLines"][key]) {
+        console.log("Replacing", key);
         delete existing["QuestLines"][key];
+    } else {
+        console.log("Inserting", key);
+    }
     existing["QuestLines"][key] = toInject[key];
 }
 
-fs.writeFileSync(publicJsonPath, JSON.stringify(existing, null, 2));
+fs.writeFileSync(publicJsonPath, JSON.stringify(existing));

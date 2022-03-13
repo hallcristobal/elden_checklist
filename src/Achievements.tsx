@@ -32,12 +32,17 @@ export default class Achievements extends React.Component<IProps, IState> {
     render() {
         const groups = this.state.groups.map((group, _idx) => {
             const id = `${group.toLowerCase()}_achievements`;
+            var numChecked = 0;
 
             const achivementList = this.props.Achievements.filter(a => a.Type === group).sort((a, b) => a.ID - b.ID).map((a, idx) => {
                 const missable = a.Missable ? (
                     <span style={{ color: "red" }}>[Missable]</span>
                 ) : (<></>);
+
                 const checked = this.props.Checked.indexOf(a.ID) !== -1;
+                if (checked)
+                    numChecked++;
+
                 return (
                     <li key={`achievement_${_idx}_${idx}`} style={checked && this.props.HideChecked ? { "display": "none" } : {}}>
                         <label className={checked ? "checked" : ""}>
@@ -60,7 +65,7 @@ export default class Achievements extends React.Component<IProps, IState> {
             return (
                 <>
                     <div className="header">
-                        <h3>{`${group} Achievements`} </h3>
+                        <h3>{`${group} Achievements`}  <span className={"checked-count " + (numChecked === achivementList.length ? "complete" : "")}>({numChecked}/{achivementList.length})</span></h3>
                         <a data-bs-toggle="collapse" href={`#${id}`} role="button" aria-expanded="false" aria-controls={id} onClick={this.onCollapse}>
                             [Hide]
                         </a>

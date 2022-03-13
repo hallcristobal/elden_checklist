@@ -11,7 +11,7 @@ interface IProps {
 
 export default class QuestLines extends React.Component<IProps, {}> {
     render() {
-        const questLines = Object.keys(this.props.Checklist.QuestLines).map(key => {
+        const questLines = Object.keys(this.props.Checklist.QuestLines).sort().map(key => {
             return (
                 <Checklist
                     Objects={this.props.Checklist.QuestLines[key]}
