@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './DarkTheme.css';
 import Achievements from './Achievements';
 import Collectables from './Collectables';
 import QuestLines from './QuestLines';
@@ -33,6 +34,7 @@ export interface IChecklist {
 interface ILocalStorage {
   Checked: number[];
   HideChecked: boolean;
+  DarkTheme: boolean;
 }
 
 interface IState {
@@ -41,6 +43,7 @@ interface IState {
   Checked: number[];
   HideChecked: boolean;
   Collapsed: boolean;
+  DarkTheme: boolean;
 }
 
 const STORAGE_KEY = "elden.ring.checklist.marked";
@@ -54,6 +57,7 @@ export default class App extends React.Component<{}, IState> {
       Checked: [],
       HideChecked: false,
       Collapsed: true,
+      DarkTheme: true,
     };
   }
 
@@ -62,7 +66,7 @@ export default class App extends React.Component<{}, IState> {
       try {
         var item = window.localStorage.getItem(STORAGE_KEY);
         if (item === null)
-          return { Checked: [], HideChecked: false };
+          return { Checked: [], HideChecked: false, DarkTheme: true };
 
         var items = JSON.parse(item) as ILocalStorage;
         return items;
@@ -71,14 +75,15 @@ export default class App extends React.Component<{}, IState> {
       }
     }
 
-    return { Checked: [], HideChecked: false };
+    return { Checked: [], HideChecked: false, DarkTheme: true };
   }
 
   saveLocalStorage() {
     if (Storage) {
       const data: ILocalStorage = {
         Checked: this.state.Checked,
-        HideChecked: this.state.HideChecked
+        HideChecked: this.state.HideChecked,
+        DarkTheme: this.state.DarkTheme,
       };
 
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
@@ -92,12 +97,15 @@ export default class App extends React.Component<{}, IState> {
       Checklist: checklist,
       Loading: false,
       Checked: checked.Checked,
-      HideChecked: checked.HideChecked
+      HideChecked: checked.HideChecked,
+      DarkTheme: checked.DarkTheme || true,
+    }, () => {
+      Array.from(document.querySelectorAll("a[data-bs-toggle=collapse]"))
+        .filter(e => !e.classList.contains("collapsed"))
+        .forEach(e => (e as HTMLElement).click());
+      this.resetTheme();
     });
 
-    Array.from(document.querySelectorAll("a[data-bs-toggle=collapse]"))
-      .filter(e => !e.classList.contains("collapsed"))
-      .forEach(e => (e as HTMLElement).click());
   }
 
   onCheck(id: number, checked: boolean) {
@@ -121,7 +129,7 @@ export default class App extends React.Component<{}, IState> {
     }, () => this.saveLocalStorage());
   }
 
-  setHideChecked(evt: React.ChangeEvent<HTMLInputElement>): void {
+  setHideChecked(evt: React.ChangeEvent<HTMLInputElement>) {
     this.setState({
       HideChecked: evt.target.checked
     }, () => this.saveLocalStorage());
@@ -143,7 +151,24 @@ export default class App extends React.Component<{}, IState> {
     });
   }
 
-  render() {
+  resetTheme() {
+    if (this.state.DarkTheme) {
+      document.body.setAttribute('data-theme', 'dark');
+    } else {
+      document.body.removeAttribute('data-theme');
+    }
+  }
+
+  onDarkThemeClick(evt: React.ChangeEvent<HTMLInputElement>) {
+    this.setState({
+      DarkTheme: evt.target.checked
+    }, () => {
+      this.resetTheme();
+      this.saveLocalStorage();
+    });
+  }
+
+  render(): JSX.Element {
     const body = this.state.Loading === true
       ? (<div>Loading...</div>)
       : this.state.Checklist !== null ? (
@@ -194,6 +219,10 @@ export default class App extends React.Component<{}, IState> {
           <div className="col-auto form-check form-switch">
             <input className="form-check-input" type="checkbox" id="hideCompleted" checked={this.state.HideChecked} onChange={(evt) => this.setHideChecked(evt)} />
             <label className="form-check-label" htmlFor="hideCompleted">Hide Completed</label>
+          </div>
+          <div className="col-auto form-check form-switch">
+            <input className="form-check-input" type="checkbox" id="hideCompleted" checked={this.state.DarkTheme} onChange={(evt) => this.onDarkThemeClick(evt)} />
+            <label className="form-check-label" htmlFor="hideCompleted">Dark Theme</label>
           </div>
         </div>
         {body}
