@@ -25,8 +25,9 @@ export interface IChecklist {
   "Legendary Ashen Remains": IObject[];
   "Legendary Sorcery-Incantations": IObject[];
   "Legendary Talismans": IObject[];
-  "Millicent": IObject[];
-  "Dung Eater": IObject[];
+  "QuestLines": {
+    [key: string]: IObject[];
+  };
 }
 
 interface ILocalStorage {
@@ -34,16 +35,10 @@ interface ILocalStorage {
   HideChecked: boolean;
 }
 
-enum Tab {
-  Achievements,
-  Collectables,
-}
-
 interface IState {
   Checklist: IChecklist | null;
   Loading: boolean;
   Checked: number[];
-  activeTab: Tab;
   HideChecked: boolean;
 }
 
@@ -56,17 +51,8 @@ export default class App extends React.Component<{}, IState> {
       Checklist: null,
       Loading: true,
       Checked: [],
-      activeTab: this.getCurrentTab(),
       HideChecked: false,
     };
-  }
-
-  getCurrentTab() {
-    const pathname = window.location.pathname;
-    if (pathname.startsWith("/collectables")) {
-      return Tab.Collectables;
-    }
-    return Tab.Achievements;
   }
 
   loadLocalStorage() {
@@ -127,12 +113,6 @@ export default class App extends React.Component<{}, IState> {
     this.setState({
       Checked: []
     }, () => this.saveLocalStorage());
-  }
-
-  setCurrentTab(tab: Tab) {
-    this.setState({
-      activeTab: tab
-    });
   }
 
   setHideChecked(evt: React.ChangeEvent<HTMLInputElement>): void {

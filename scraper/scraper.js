@@ -4,8 +4,8 @@ const path = require('path');
 const minify = require('html-minifier').minify;
 
 const steps = [];
-const startID = 7001;
-const name = "Dung Eater";
+const startID = 11001;
+const name = "Iron Fist Alexander";
 
 function readFile(path) {
     return new Promise((res, _rej) => {
