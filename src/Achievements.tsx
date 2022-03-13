@@ -65,7 +65,7 @@ export default class Achievements extends React.Component<IProps, IState> {
             return (
                 <>
                     <div className="header">
-                        <h3>{`${group} Achievements`}  <span className={"checked-count " + (numChecked === achivementList.length ? "complete" : "")}>({numChecked}/{achivementList.length})</span></h3>
+                        <h3>{`${group} Achievements`} <span className={"checked-count " + (numChecked === achivementList.length ? "complete" : "")}>({numChecked}/{achivementList.length})</span> </h3>
                         <a data-bs-toggle="collapse" href={`#${id}`} role="button" aria-expanded="false" aria-controls={id} onClick={this.onCollapse}>
                             [Hide]
                         </a>

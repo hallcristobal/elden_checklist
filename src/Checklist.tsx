@@ -52,7 +52,7 @@ export default class Checklist extends React.Component<IProps, {}> {
         return (
             <div>
                 <div className="header">
-                    <h3>{this.props.Title} <span className={"checked-count " + (numChecked === this.props.Objects.length ? "complete" : "")}>({numChecked}/{this.props.Objects.length})</span></h3>
+                    <h3>{this.props.Title} <span className={"checked-count " + (numChecked === this.props.Objects.length ? "complete" : "")}>({numChecked}/{this.props.Objects.length})</span> </h3>
                     <a data-bs-toggle="collapse" href={`#${id}`} role="button" aria-expanded="true" aria-controls={id} onClick={this.onCollapse}>
                         [Hide]
                     </a>
