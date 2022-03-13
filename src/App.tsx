@@ -53,7 +53,7 @@ export default class App extends React.Component<{}, IState> {
       Loading: true,
       Checked: [],
       HideChecked: false,
-      Collapsed: false,
+      Collapsed: true,
     };
   }
 
@@ -94,6 +94,10 @@ export default class App extends React.Component<{}, IState> {
       Checked: checked.Checked,
       HideChecked: checked.HideChecked
     });
+
+    Array.from(document.querySelectorAll("a[data-bs-toggle=collapse]"))
+      .filter(e => !e.classList.contains("collapsed"))
+      .forEach(e => (e as HTMLElement).click());
   }
 
   onCheck(id: number, checked: boolean) {
