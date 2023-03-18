@@ -37,6 +37,12 @@ export default class Collectables extends React.Component<IProps, {}> {
                     HideChecked={this.props.HideChecked}
                     Title="Legendary Talismans"
                     onCheck={(id, chk) => this.props.onCheck(id, chk)} />
+                <Checklist
+                    Objects={this.props.Checklist["All Sorceries"]}
+                    Checked={this.props.Checked}
+                    HideChecked={this.props.HideChecked}
+                    Title="All Sorceries"
+                    onCheck={(id, chk) => this.props.onCheck(id, chk)} />
             </div>
         )
     }

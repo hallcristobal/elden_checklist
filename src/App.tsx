@@ -26,6 +26,7 @@ export interface IChecklist {
   "Legendary Ashen Remains": IObject[];
   "Legendary Sorcery-Incantations": IObject[];
   "Legendary Talismans": IObject[];
+  "All Sorceries": IObject[];
   "QuestLines": {
     [key: string]: IObject[];
   };
